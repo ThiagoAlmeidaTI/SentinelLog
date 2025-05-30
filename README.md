@@ -19,3 +19,22 @@ Projeto de simulação de um ambiente SOC (Security Operations Center) para estu
 - Docker
 
 ## Estrutura
+📁 SentinelLog
+├── logs/ # Logs coletados
+├── scripts/ # Scripts Python de automação
+├── alerts/ # Regras, alertas e relatórios
+├── configs/ # Configurações (Wazuh, Logstash, etc)
+├── docs/ # Documentações e prints
+├── docker-compose.yml
+├── requirements.txt
+├── README.md
+
+---
+
+### 🐳 Etapa 4: Configurar Docker Compose (Wazuh + ELK)
+
+Você pode usar o repositório oficial do Wazuh:
+
+```bash
+git clone https://github.com/wazuh/wazuh-docker.git
+cd wazuh-docker
